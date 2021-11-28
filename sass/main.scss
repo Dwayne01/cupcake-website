@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400|Sacramento:400|Sarabun:100italic,400,300,800,100,300italic|Open+Sans:300|Annie+Use+Your+Telescope:400");
+
+$primary: #6A4131;
+$secondary: #EEF5FF;
+$tertiary: #FFDAB4;
+$light_cream: #FFFBF5;
+$dark_cream: #FFF5EA;
+$red: #E92605;
+$white: #fff;
+$green: rgba(126, 189, 0, 0.41);
+$yellow: rgba(241, 178, 0, 0.52);
+$orange: rgba(228, 45, 1, 0.49);
+$brown: rgba(138, 61, 1, 0.47);
+$blue: #6EFEFD;
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.notice {
+    background-color: $blue;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+
+    img{
+        width: 20px;
+        margin: 0px 12px -6px 0;
+    }
+
+    p{
+        margin: 0;
+        margin: auto;
+        padding-top: 0;
+    }
+
+    a {
+        color: red!important;
+    }
+}
+
+
+.head-container {
+    background-color: $secondary;
+    text-align: center;
+
+
+    #mobileBtn{
+        align-self: center;
+        color: $primary;
+        font-size: 24px;
+    }
+    .mobile-nav{
+        background-color: $primary;
+        display: none;
+        ul {
+            display: block;
+            padding: 0px;
+            margin: 0px;
+
+            li{
+                list-style: none;
+                align-self: center;
+                padding: 10px;
+            }
+    
+            li a{
+                color: $white!important;
+            }
+
+            li:active{
+                background-color: $brown;
+            }
+
+            li a:hover{
+               text-decoration: none; 
+            }
+        }
+    }
+   
+    .jumbotron {
+        display: flex;
+
+        img {
+            width: 100%;
+            height: 100%;        
+        }
+
+        .jumbotron-text{
+            padding: 10px;
+            color: $primary;
+            align-self: center;
+
+            h1{
+                text-align: center;
+                font-family: 'Sacramento';
+                font-size: 3rem;
+                font-weight: 400;
+            }
+            p {
+                font-family: 'Sarabun';
+                font-style: italic;
+                font-weight: 200;
+
+                text-align: center;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+        }
+
+        .jumbotron-btn{
+            background-color: $primary;
+            color: $white;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    ul {
+        display: none;
+        padding: 0;
+        margin: 0;
+        li{
+            list-style: none;
+            align-self: center;
+            width: 100px;
+
+            a {
+                text-decoration: none;
+                color: $primary;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+
+.welcome {
+    background-color: $tertiary;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    
+    img {
+        width: 35%;        
+    }
+
+
+    .welcome-container{
+        text-align: right;
+        position: absolute;
+        top: 100px;
+        top: 100px;
+        width: 100%;
+        left: 0px;
+    }
+
+     .welcome-text{
+            padding: 10px;
+            color: $primary;
+            width: 60%;
+
+            h1{
+                text-align: center;
+                font-family: 'Sacramento';
+                font-size: 3rem;
+                font-weight: 400;
+            }
+            p {
+                font-family: 'Sarabun';
+                font-style: italic;
+                font-weight: 100;
+                text-align: center;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+        }
+}
+
+.category-container {
+    background-color: $light_cream;
+    padding: 20px;
+    h1 {
+        text-align: center;
+        font-family: 'Sacramento';
+        color: $primary;
+        font-size: 3rem;
+        font-weight: 400;
+        margin-top: 50px;
+         
+    }
+    .category-memo {
+        font-family: 'Annie Use Your Telescope';
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 25px 0;
+        color: $red;
+    }
+
+    .card-container {
+        display: flex;
+        grid-gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        .card {
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            font-family: 'Open Sans';
+            color: $light_cream;
+            width: 100%;
+
+            .card-btn-cont{
+                height: 40px;
+                width: 40px;
+                margin: auto;
+                background-color: $white;
+                border-radius: 29px;
+
+                .card-btn {
+                    line-height: 2.5;
+                }
+            }
+
+            .card-title-cont{
+                height: 50px;;
+            }
+        }
+
+        .card:nth-child(1) {
+            background-color: $green;
+            .card-btn-cont a{
+                color: $green!important;
+            }
+        }
+
+        .card:nth-child(2) {
+            background-color: $yellow;
+            .card-btn-cont a{
+                color: $yellow!important;
+            }
+        }
+
+        .card:nth-child(3) {
+            background-color: $orange;
+            .card-btn-cont a{
+                color: $orange!important;
+            }
+        }
+
+        .card:nth-child(4) {
+            background-color: $brown;
+            .card-btn-cont a{
+                color: $brown!important;
+            }
+        }
+
+    }
+}
+
+
+.operation-hours-cont {
+    background-color: $dark_cream;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    
+    img {
+        width: 80%;
+        margin-top: 20px;        
+    }
+
+    h1 {
+        font-family: 'Sacramento';
+        color: $primary;
+        font-size: 3rem;
+        font-weight: 400;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        line-height: 1;
+    }
+
+    p{
+        font-family: 'Sarabun';
+        font-size: 18px;
+        font-weight: 200;
+        font-style: italic;
+        color: $primary;
+        margin-bottom: 0px;
+    }
+
+    .sunday {
+        margin-top: 20px!important;
+    }
+}
+
+.footer{
+    background-color: $primary;
+    text-align: center;
+    padding: 20px ;
+    
+    h1 {
+        color: $white;
+        margin-bottom: 20px;
+        font-family: Sacramento;
+    }
+
+    p {
+        color: $white;
+    }
+
+}
+
+
+//ABOUT US
+.about-us{
+    background-color: $light_cream;
+    padding: 20px;
+    text-align: justify;
+
+    h1{
+        color: $primary;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    p {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+
+//CONTACT US
+
+.contact-us{
+    background-color: $light_cream;
+    padding: 20px;
+    text-align: justify;
+
+    form {
+        width: 60%;
+        margin: auto
+    }
+
+    h1{
+        color: $primary;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    p {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input{
+        border-color: $primary;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    [type='button']{
+        border: none;
+        width: 200px;
+        background-color: $primary;
+        color: $white;
+        border-radius: 50px;
+    }
+
+    label{
+        color: $primary;
+    }
+
+    textarea {
+        height: 200px
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .nav-container ul{
+        display: flex;
+    }
+
+    #mobileBtn{
+        display: none;
+    }
+
+    .contact-us{
+        form {
+            width: 40%;
+        }
+    }
+
+    .about-us{
+        display: flex;
+
+        .welcome-text {
+            padding: 100px;
+        }
+    }
+
+    .head-container .jumbotron  {
+        img {
+            width: 80%;
+            text-align: left;
+            float: left;
+        }
+
+        .jumbotron-text h1 {
+            font-size: 4rem;
+        }
+
+        .jumbotron-btn {
+           padding: 10px 25px;
+        }
+
+        .jumbotron-text p {
+            font-size: 18px;
+        }
+    }
+
+    .category-container{
+        .card-container {
+            flex-wrap: nowrap;
+        }
+    }
+
+    .welcome {
+        padding: 50px;
+
+        .welcome-container {
+            top: 90px;
+            right: 30px;
+        }
+
+        .welcome-text h1 {
+            font-size: 4rem;
+        }
+
+        .welcome-text p {
+            font-size: 18px;
+        }
+
+        img {
+            width: 25%;
+        }
+    }
+
+    .category-container h1 {
+        font-size: 4rem;
+    }
+
+    .category-container .category-memo {
+        font-size: 2rem;
+    }
+        
+}

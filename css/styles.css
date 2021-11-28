@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400|Sacramento:400|Sarabun:100italic,400,300,800,100,300italic|Open+Sans:300|Annie+Use+Your+Telescope:400");
+* {
+  padding: 0;
+  margin: 0; }
+
+.notice {
+  background-color: #6EFEFD;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  display: flex; }
+  .notice img {
+    width: 20px;
+    margin: 0px 12px -6px 0; }
+  .notice p {
+    margin: 0;
+    margin: auto;
+    padding-top: 0; }
+  .notice a {
+    color: red !important; }
+
+.head-container {
+  background-color: #EEF5FF;
+  text-align: center; }
+  .head-container #mobileBtn {
+    align-self: center;
+    color: #6A4131;
+    font-size: 24px; }
+  .head-container .mobile-nav {
+    background-color: #6A4131;
+    display: none; }
+    .head-container .mobile-nav ul {
+      display: block;
+      padding: 0px;
+      margin: 0px; }
+      .head-container .mobile-nav ul li {
+        list-style: none;
+        align-self: center;
+        padding: 10px; }
+      .head-container .mobile-nav ul li a {
+        color: #fff !important; }
+      .head-container .mobile-nav ul li:active {
+        background-color: rgba(138, 61, 1, 0.47); }
+      .head-container .mobile-nav ul li a:hover {
+        text-decoration: none; }
+  .head-container .jumbotron {
+    display: flex; }
+    .head-container .jumbotron img {
+      width: 100%;
+      height: 100%; }
+    .head-container .jumbotron .jumbotron-text {
+      padding: 10px;
+      color: #6A4131;
+      align-self: center; }
+      .head-container .jumbotron .jumbotron-text h1 {
+        text-align: center;
+        font-family: 'Sacramento';
+        font-size: 3rem;
+        font-weight: 400; }
+      .head-container .jumbotron .jumbotron-text p {
+        font-family: 'Sarabun';
+        font-style: italic;
+        font-weight: 200;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px; }
+    .head-container .jumbotron .jumbotron-btn {
+      background-color: #6A4131;
+      color: #fff;
+      padding: 5px 20px;
+      border: none;
+      border-radius: 20px;
+      margin-top: 20px; }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; }
+  .nav-container img {
+    width: 60px;
+    height: 60px; }
+  .nav-container ul {
+    display: none;
+    padding: 0;
+    margin: 0; }
+    .nav-container ul li {
+      list-style: none;
+      align-self: center;
+      width: 100px; }
+      .nav-container ul li a {
+        text-decoration: none;
+        color: #6A4131;
+        text-transform: uppercase; }
+
+.welcome {
+  background-color: #FFDAB4;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px; }
+  .welcome img {
+    width: 35%; }
+  .welcome .welcome-container {
+    text-align: right;
+    position: absolute;
+    top: 100px;
+    top: 100px;
+    width: 100%;
+    left: 0px; }
+  .welcome .welcome-text {
+    padding: 10px;
+    color: #6A4131;
+    width: 60%; }
+    .welcome .welcome-text h1 {
+      text-align: center;
+      font-family: 'Sacramento';
+      font-size: 3rem;
+      font-weight: 400; }
+    .welcome .welcome-text p {
+      font-family: 'Sarabun';
+      font-style: italic;
+      font-weight: 100;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px; }
+
+.category-container {
+  background-color: #FFFBF5;
+  padding: 20px; }
+  .category-container h1 {
+    text-align: center;
+    font-family: 'Sacramento';
+    color: #6A4131;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 50px; }
+  .category-container .category-memo {
+    font-family: 'Annie Use Your Telescope';
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 25px 0;
+    color: #E92605; }
+  .category-container .card-container {
+    display: flex;
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px; }
+    .category-container .card-container .card {
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      font-family: 'Open Sans';
+      color: #FFFBF5;
+      width: 100%; }
+      .category-container .card-container .card .card-btn-cont {
+        height: 40px;
+        width: 40px;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 29px; }
+        .category-container .card-container .card .card-btn-cont .card-btn {
+          line-height: 2.5; }
+      .category-container .card-container .card .card-title-cont {
+        height: 50px; }
+    .category-container .card-container .card:nth-child(1) {
+      background-color: rgba(126, 189, 0, 0.41); }
+      .category-container .card-container .card:nth-child(1) .card-btn-cont a {
+        color: rgba(126, 189, 0, 0.41) !important; }
+    .category-container .card-container .card:nth-child(2) {
+      background-color: rgba(241, 178, 0, 0.52); }
+      .category-container .card-container .card:nth-child(2) .card-btn-cont a {
+        color: rgba(241, 178, 0, 0.52) !important; }
+    .category-container .card-container .card:nth-child(3) {
+      background-color: rgba(228, 45, 1, 0.49); }
+      .category-container .card-container .card:nth-child(3) .card-btn-cont a {
+        color: rgba(228, 45, 1, 0.49) !important; }
+    .category-container .card-container .card:nth-child(4) {
+      background-color: rgba(138, 61, 1, 0.47); }
+      .category-container .card-container .card:nth-child(4) .card-btn-cont a {
+        color: rgba(138, 61, 1, 0.47) !important; }
+
+.operation-hours-cont {
+  background-color: #FFF5EA;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px; }
+  .operation-hours-cont img {
+    width: 80%;
+    margin-top: 20px; }
+  .operation-hours-cont h1 {
+    font-family: 'Sacramento';
+    color: #6A4131;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1; }
+  .operation-hours-cont p {
+    font-family: 'Sarabun';
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+    color: #6A4131;
+    margin-bottom: 0px; }
+  .operation-hours-cont .sunday {
+    margin-top: 20px !important; }
+
+.footer {
+  background-color: #6A4131;
+  text-align: center;
+  padding: 20px; }
+  .footer h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: Sacramento; }
+  .footer p {
+    color: #fff; }
+
+.about-us {
+  background-color: #FFFBF5;
+  padding: 20px;
+  text-align: justify; }
+  .about-us h1 {
+    color: #6A4131;
+    font-weight: 300;
+    text-align: center; }
+  .about-us p {
+    width: 100%;
+    max-width: 100%; }
+  .about-us img {
+    border-radius: 10px; }
+
+.contact-us {
+  background-color: #FFFBF5;
+  padding: 20px;
+  text-align: justify; }
+  .contact-us form {
+    width: 60%;
+    margin: auto; }
+  .contact-us h1 {
+    color: #6A4131;
+    font-weight: 300;
+    text-align: center; }
+  .contact-us p {
+    width: 100%;
+    max-width: 100%; }
+  .contact-us input {
+    border-color: #6A4131;
+    height: 50px;
+    margin-bottom: 20px; }
+  .contact-us [type='button'] {
+    border: none;
+    width: 200px;
+    background-color: #6A4131;
+    color: #fff;
+    border-radius: 50px; }
+  .contact-us label {
+    color: #6A4131; }
+  .contact-us textarea {
+    height: 200px; }
+
+@media screen and (min-width: 1000px) {
+  .nav-container ul {
+    display: flex; }
+  #mobileBtn {
+    display: none; }
+  .contact-us form {
+    width: 40%; }
+  .about-us {
+    display: flex; }
+    .about-us .welcome-text {
+      padding: 100px; }
+  .head-container .jumbotron img {
+    width: 80%;
+    text-align: left;
+    float: left; }
+  .head-container .jumbotron .jumbotron-text h1 {
+    font-size: 4rem; }
+  .head-container .jumbotron .jumbotron-btn {
+    padding: 10px 25px; }
+  .head-container .jumbotron .jumbotron-text p {
+    font-size: 18px; }
+  .category-container .card-container {
+    flex-wrap: nowrap; }
+  .welcome {
+    padding: 50px; }
+    .welcome .welcome-container {
+      top: 90px;
+      right: 30px; }
+    .welcome .welcome-text h1 {
+      font-size: 4rem; }
+    .welcome .welcome-text p {
+      font-size: 18px; }
+    .welcome img {
+      width: 25%; }
+  .category-container h1 {
+    font-size: 4rem; }
+  .category-container .category-memo {
+    font-size: 2rem; } }
