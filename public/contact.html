@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.ubuntu.com/v1/vanilla-framework-version-2.37.0.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section class="notice">
+      <p>
+        <img src="./img/box.png" alt="box" />Cupcake delivery is available
+        throughout Toronto, the GTA, and beyond. <a href="#"> Learn More</a>
+      </p>
+    </section>
+    <section class="head-container">
+      <div class="nav-container">
+        <img src="./img/logo.png" alt="logo" />
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+        <a id="mobileBtn" href="javascript:void(0);" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="mobile-nav" id="myLinks">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="welcome-text">
+        <h1>Contact Us</h1>
+
+        <form>
+          <div class="form-item">
+            <label for="name" id="namee">Name</label>
+            <input
+              placeholder="John Doe"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="email" id="email">Email</label>
+            <input
+              placeholder="example@gmail.com"
+              id="email"
+              name="email"
+              type="email"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="message" id="message">Message</label>
+            <textarea type="email" id="message" name="message"> </textarea>
+          </div>
+
+          <input type="button" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="socials">
+        <h1>Social Media</h1>
+        <div>
+          <a
+            class="p-icon--facebook"
+            href="https://github.com/canonical-web-and-design/vanilla-framework/"
+            >Facebook</a
+          >
+          <a class="p-icon--twitter" href="https://twitter.com/vanillaframewrk"
+            >Twitter</a
+          >
+          <a
+            class="p-icon--instagram"
+            href="https://twitter.com/vanillaframewrk"
+            >Instagram</a
+          >
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&#169; 2021 Toronto Cupcake all rights reserved</p>
+      </div>
+    </section>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
